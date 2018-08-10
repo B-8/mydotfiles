@@ -1,1 +1,1 @@
-My Dotfiles // An Installer
+My Dotfiles && An Installer
