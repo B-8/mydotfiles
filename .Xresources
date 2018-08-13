@@ -3,7 +3,7 @@
 
 URxvt.font:		xft:monospace:size=12
 URxvt.scrollBar:	false
-URxvt.cursorColor:	#ff00ff
+URxvt.cursorColor:	#9593d9
 URxvt.intensityStyles:	false
 URxvt.depth:		32
 URxvt.internalBorder:	20
