@@ -1,55 +1,50 @@
-*foreground:            #f8f8f2
-*background:		rgba(0, 0, 0, .7)
+! __          ___           _                 _      
+! \ \        / / |         | |               | |     
+!  \ \  /\  / /| |__   ___ | | ___  ___  __ _| | ___ 
+!   \ \/  \/ / | '_ \ / _ \| |/ _ \/ __|/ _` | |/ _ \ 
+!    \  /\  /  | | | | (_) | |  __/\__ \ (_| | |  __/ 
+!     \/  \/   |_| |_|\___/|_|\___||___/\__,_|_|\___| 
+!                                                                     
+!              Colorscheme By Balaclava
+!
 
-URxvt.font:		xft:monospace:size=12
-URxvt.scrollBar:	false
-URxvt.cursorColor:	#9593d9
-URxvt.intensityStyles:	false
-URxvt.depth:		32
-URxvt.internalBorder:	20
-URxvt.background:	[95]#000000
+*foreground:            #f8f8f2
+*background:            rgba(0, 0, 0, .7)
+
+URxvt.font:             xft:monospace:size=11
+URxvt.scrollBar:        false
+URxvt.intensityStyles:  false
+URxvt.depth:            32
+URxvt.background:       [95]#000000
 
 rofi.color-enabled:     true
 rofi.color-window:      #000, #000, #000
-rofi.color-normal:      #000, #ff00ff, #000, #ff00ff
-rofi.lines:             20
-rofi.fullscreen:        true
+rofi.color-normal:      #000, #fff, #000, #fff
+rofi.lines:             10
+rofi.hide-scrollbar:    true
+rofi.width:             20
 
-! Black
-!*color0:      #404040
-!*color8:      #505050
-*color0:                  #1B1D1E
-*color8:                  #505354
-
-! Red
-*color1:      #ff005f
-*color9:      #ff6767
-
-! Green
-*color2:      #afd700
-*color10:     #8ce25d
-
-! Yellow
-*color3:      #ff8f00
-*color11:     #ffb445
-
-! Blue
-*color4:      #1165e9
-*color12:     #5496ff
-
-! Magenta
-!*color5:      #875c8d
-!*color13:     #e41f66
-! new one
-!*color5:                   #9f5079
-!*color13:                 #a761c2
-*color5:                  #8C54FE
-*color13:                 #9E6FFE
-! Cyan
-!*color6:      #2873a2
-!*color14:     #41c2bb
-*color6: #4c8ea1
-*color14: #6bc1d0
-! White
-*color7:      #d2d2d2
-*color15:     #ffffff
+! black death
+*color0:                #4c4c4c
+*color8:                #4c4c4c
+! rt-20 red
+*color1:                #d63b33
+*color9:                #d63n33
+! glock 26 green
+*color2:                #049349
+*color10:               #049349
+! yun feng yellow
+*color3:                #e9fc16
+*color11:               #e9fc16
+! bechowiec-1 blue
+*color4:                #4866ea
+*color12:               #4866ea
+! mossberg 500 magenta
+*color5:                #a684d6
+*color13:               #a684d6
+! cheytac intervention cyan
+*color6:                #aafdff
+*color14:               #aafdff
+! warlord white
+*color7:                #f5f5f5
+*color15:               #f5f5f5
