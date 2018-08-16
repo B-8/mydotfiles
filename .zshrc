@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh""
 alias i3="vim .config/i3/config"
 alias i3b="sudo vim /usr/local/etc/i3blocks.conf"
-alias brc="vim .bashrc"
+alias zrc="vim .zshrc"
 alias vrc="vim .vimrc"
 alias q="exit"
 alias c="clear"
