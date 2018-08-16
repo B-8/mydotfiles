@@ -10,7 +10,7 @@ echo -en "\033[1;32mInstalling I3 And Other Basics...\033[0m"
 sleep 1
 clear
 #installing basics
-sudo dnf install -y i3 vim ranger w3m feh ImageMagick cava libxcb-devel xcb-util-keysyms-devel xcb-util-devel xcb-util-wm-devel xcb-util-xrm-devel yajl-devel libXrandr-devel startup-notification-devel libev-devel xcb-util-cursor-devel libXinerama-devel libxkbcommon-devel libxkbcommon-x11-devel pcre-devel pango-devel git gcc automake i3status i3lock
+sudo dnf install -y i3 vim zsh ranger w3m feh ImageMagick cava libxcb-devel xcb-util-keysyms-devel xcb-util-devel xcb-util-wm-devel xcb-util-xrm-devel yajl-devel libXrandr-devel startup-notification-devel libev-devel xcb-util-cursor-devel libXinerama-devel libxkbcommon-devel libxkbcommon-x11-devel pcre-devel pango-devel git gcc automake i3status i3lock
 #end of basics
 clear
 echo -en "\033[1;32mInstalling Compton And Rofi...\033[0m"
@@ -54,6 +54,11 @@ sudo make clean all
 sudo make install
 clear
 #end of I3blocks
+cd
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+chsh -s /bin/zsh
+clear
 echo -en "\033[1;31mCONGRATS!!! \033[1;37m" && whoami
 sleep 1
 clear
