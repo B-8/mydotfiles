@@ -40,8 +40,8 @@ set wrap
 set background=dark
 set cursorline
 set hlsearch
-"set number
-"set relativenumber
+set number
+set relativenumber
 set ruler
 
 
