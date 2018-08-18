@@ -1,3 +1,5 @@
+" Plugins {{{
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,4 +18,39 @@ Plugin 'xuhdev/vim-latex-live-preview'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-let g:airline_theme='jet'
+" }}}
+
+
+
+" Basics {{{
+
+let g:airline_theme='zenburn'
+
+syntax enable
+
+set autoread
+set encoding=utf-8
+set fileencoding=utf-8
+set foldlevelstart=0
+set foldmethod=marker
+set expandtab
+set textwidth=80
+set wrap
+
+set background=dark
+set cursorline
+set hlsearch
+"set number
+"set relativenumber
+set ruler
+
+
+" }}}
+
+
+
+" Mappings {{{                                                                               
+
+
+
+" }}}
