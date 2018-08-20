@@ -1,7 +1,7 @@
 ##########################################################
 ######################## MY CONFIG #######################
 ##########################################################
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 client.focused          #ff00ff #ff00ff #ff00ff #ff00ff
 client.unfocused        #0000ff #0000ff #0000ff #0000ff
 client.focused_inactive #0000ff #0000ff #0000ff #0000ff
@@ -9,9 +9,9 @@ client.urgent           #ff00ff #ff00ff #ff00ff #ff00ff
 hide_edge_borders both
 exec_always --no-startup-id compton
 exec_always --no-startup-id compton-trans
-exec_always --no-startup-id feh --bg-scale /home/rodent/Wallpapers/Space/24852.jpg
-gaps outer 10
-gaps inner 10
+exec_always --no-startup-id feh --bg-scale /home/xlz0ll/Wallpapers/865098.jpg
+gaps outer 150
+gaps inner 20
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+z gaps outer current plus 10
 bindsym $mod+Shift+z gaps outer current minus 10
@@ -56,7 +56,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
