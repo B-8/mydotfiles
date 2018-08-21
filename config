@@ -21,9 +21,10 @@ bindsym $mod+period exec amixer set Master -q 5%+
 bar {
         status_command i3blocks
 	position top
+        font pango: monospace, Awesome 10
         colors {
             background #000000
-            separator  #afaf81
+            separator  #000000
             #                   border     background   text
             focused_workspace   #000000   #88458b      #ffffff
             inactive_workspace  #000000   #c65941      #ffffff
@@ -46,7 +47,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 10
+font pango:monospace, Awesome 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
