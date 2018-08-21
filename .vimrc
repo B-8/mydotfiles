@@ -27,6 +27,7 @@ filetype plugin indent on    " required
 let g:airline_theme='zenburn'
 
 syntax enable
+colorscheme delek
 
 set autoread
 set encoding=utf-8
