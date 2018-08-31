@@ -39,19 +39,26 @@ set textwidth=80
 set wrap
 
 set background=dark
-set cursorline
 set hlsearch
 set number
 set relativenumber
 set ruler
+
+set cursorline
+autocmd InsertEnter * highlight CursorLine guibg=#635f62 guifg=fg ctermbg=Gray guifg=White gui=bold ctermfg=White
+autocmd InsertLeave * highlight CursorLine guibg=#635f62 guifg=fg ctermbg=Gray guifg=Black gui=NONE ctermfg=Black
+
+set cursorcolumn
+autocmd InsertEnter * highlight CursorColumn ctermfg=White ctermbg=Gray cterm=bold guifg=White guibg=#635f62 gui=bold
+autocmd InsertLeave * highlight CursorColumn ctermfg=Black ctermbg=Gray cterm=bold guifg=Black guibg=#635f62 gui=NONE
 
 
 " }}}
 
 
 
-" Mappings {{{                                                                               
+" Mappings {{{
 
-
+autocmd FileType perl inoremap ;p print "";
 
 " }}}
