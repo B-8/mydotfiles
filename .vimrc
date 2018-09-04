@@ -46,15 +46,16 @@ set relativenumber
 set ruler
 
 set cursorline
-autocmd InsertEnter * highlight CursorLine guibg=#635f62 guifg=fg ctermbg=Gray guifg=White gui=bold ctermfg=White
-autocmd InsertLeave * highlight CursorLine guibg=#635f62 guifg=fg ctermbg=Gray guifg=Black gui=NONE ctermfg=Black
+autocmd InsertEnter * highlight CursorLine guibg=darkgray guifg=fg ctermbg=DarkGray guifg=White gui=bold ctermfg=White
+autocmd InsertLeave * highlight CursorLine guibg=darkgray guifg=fg ctermbg=DarkGray guifg=Green gui=NONE ctermfg=Green
 
 set cursorcolumn
-autocmd InsertEnter * highlight CursorColumn ctermfg=White ctermbg=Gray cterm=bold guifg=White guibg=#635f62 gui=bold
-autocmd InsertLeave * highlight CursorColumn ctermfg=Black ctermbg=Gray cterm=bold guifg=Black guibg=#635f62 gui=NONE
+autocmd InsertEnter * highlight CursorColumn ctermfg=White ctermbg=DarkGray cterm=bold guifg=White guibg=darkgray gui=bold
+autocmd InsertLeave * highlight CursorColumn ctermfg=Green ctermbg=DarkGray cterm=bold guifg=Green guibg=darkgray gui=NONE
 
 
 " }}}
+
 
 
 " Mappings {{{
