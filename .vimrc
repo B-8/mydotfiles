@@ -21,11 +21,19 @@ filetype plugin indent on    " required
 
 " }}}
 
+" Plugin Options {{{
 
+" set airline theme
+let g:airline_theme='zenburn'
+
+" nerdtree things
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" }}}
 
 " Basics {{{
-
-let g:airline_theme='zenburn'
 
 syntax enable
 colorscheme delek
@@ -41,22 +49,12 @@ set wrap
 
 set background=dark
 set hlsearch
+set incsearch
+set nohlsearch
 set number
-set relativenumber
 set ruler
 
-set cursorline
-autocmd InsertEnter * highlight CursorLine guibg=darkgray guifg=fg ctermbg=DarkGray guifg=White gui=bold ctermfg=White
-autocmd InsertLeave * highlight CursorLine guibg=darkgray guifg=fg ctermbg=DarkGray guifg=Green gui=NONE ctermfg=Green
-
-set cursorcolumn
-autocmd InsertEnter * highlight CursorColumn ctermfg=White ctermbg=DarkGray cterm=bold guifg=White guibg=darkgray gui=bold
-autocmd InsertLeave * highlight CursorColumn ctermfg=Green ctermbg=DarkGray cterm=bold guifg=Green guibg=darkgray gui=NONE
-
-
 " }}}
-
-
 
 " Mappings {{{
 
@@ -66,12 +64,7 @@ autocmd FileType perl inoremap ;i <STDIN>;
 autocmd FileType perl inoremap ;s sub name_here {<ENTER>}
 
 " nerdtree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
-
-" other mappings
 
 " save
 nnoremap <C-z> :w<CR>
