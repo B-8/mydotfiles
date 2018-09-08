@@ -34,9 +34,6 @@ bar {
 # workspace specific
 assign [class="qutebrowser"] [  WEB  ]
 exec --no-startup-id qutebrowser
-assign [class="skypeforlinux"] [  SKYPE  ]
-exec --no-startup-id skypeforlinux
-
 
 # mod
 set $mod Mod1
